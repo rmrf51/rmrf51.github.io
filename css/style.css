@@ -1,258 +1,120 @@
-/* Заготовочка */
-html {
-    overflow-x: hidden; }
-  
-body {
-background: #fff;
-font-family: "Raleway", sans-serif;
-line-height: 1.7;
-color: #6f6f6f; }
 
-a {
--webkit-transition: .3s all ease;
--o-transition: .3s all ease;
-transition: .3s all ease; }
-a:hover {
-    text-decoration: none; }
+/* CSS Document */
+body{
+    margin: 0;
+}
+.cube{
+    display: flex;
+    justify-content: center ;
+    animation: run 5s both 1s ;
+}
 
-h1, h2, h3, h4, h5 {
-line-height: 1.5;
-font-weight: normal;
-color: #000; }
-
-
-/* Навигационная панель */
-.navbar-my{
-    background: rgba(0, 0, 0, 0.2) !important;
+.cube div{
     position: absolute;
-    left: 0;
-    right: 0; 
-}
-
-
-/* .navbar-nav > .nav-item > .nav-link {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px; }
-    @media screen and (max-width: 960px) {
-      .navbar-nav > .nav-item > .nav-link {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 0px;
-        padding-right: 0px; } }
-  .navbar-nav > .nav-item.menu-cta a {
-    color: #fff; }
-  .navbar-nav > .nav-item.menu-seperator {
-    position: relative;
-    margin-left: 20px;
-    padding-left: 20px; }
-    @media screen and (max-width: 960px) {
-      .navbar-nav > .nav-item.menu-seperator {
-        padding-left: 0;
-        margin-left: 0; } }
-    .navbar-nav > .nav-item.menu-seperator:before {
-      position: absolute;
-      content: "";
-      top: 10px;
-      bottom: 10px;
-      left: 0;
-      width: 2px;
-      background: rgba(255, 255, 255, 0.05); }
-      @media screen and (max-width: 960px) {
-        .navbar-nav > .nav-item.menu-seperator:before {
-          display: none; } } */
-
-.probootstrap-navabr-dark {
-    background: rgba(0, 0, 0, 0.2) !important;
-    position: absolute;
-    left: 0;
-    right: 0; }
-@media screen and (max-width: 960px) {
-    .probootstrap-navabr-dark {
-    background: #000 !important;
-    top: 0;
-    position: relative; } }
-.probootstrap-navabr-dark .navbar-nav > .nav-item > .nav-link {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px; }
-    @media screen and (max-width: 960px) {
-    .probootstrap-navabr-dark .navbar-nav > .nav-item > .nav-link {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 0px;
-        padding-right: 0px; } }
-.probootstrap-navabr-dark .navbar-nav > .nav-item.probootstrap-cta a {
-    color: #fff; }
-.probootstrap-navabr-dark .navbar-nav > .nav-item.probootstrap-seperator {
-    position: relative;
-    margin-left: 20px;
-    padding-left: 20px; }
-    @media screen and (max-width: 960px) {
-    .probootstrap-navabr-dark .navbar-nav > .nav-item.probootstrap-seperator {
-        padding-left: 0;
-        margin-left: 0; } }
-    .probootstrap-navabr-dark .navbar-nav > .nav-item.probootstrap-seperator:before {
-    position: absolute;
-    content: "";
-    top: 10px;
-    bottom: 10px;
-    left: 0;
-    width: 2px;
-    background: rgba(255, 255, 255, 0.05); }
-    @media screen and (max-width: 960px) {
-        .probootstrap-navabr-dark .navbar-nav > .nav-item.probootstrap-seperator:before {
-        display: none; } }
-
-
-
-
-
-
-/* Секция первая */
-
-.navbar-my .navbar-nav > .nav-item.probootstrap-cta a {
-    color: #fff; }
-
-    .bg-image, .selection-cover, .probootstrap-img-item > div, .probootstrap-section-feature {
-        background-size: cover;
-        background-repeat: no-repeat; }
-      
-    .selection-cover {
-        background-image: url(../img/sel1.jpg);
-        background-position: center center; }
-    .sec1-text {
-        font-size: 70px;
-        line-height: 1; }
-    .sec1-subheading p {
-        color: rgba(255, 255, 255, 0.5); }
-
-
-/* ширина кнопки в первой секции
-при просмотре на мобильном телефон 100% */
-@media screen and (max-width: 768px) {
-    .selection-cover .btn {
-    width: 100% !important;
-}
-    .sec3-main {
-        margin-top: 180vh; 
-    } }
-
-.v-vh-100 {
-    height: 100vh; 
-}
-
-
-.btn {
-    border-radius: 40px;
-    padding: 20px 30px;
-    font-size: 14px;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-    font-weight: bold;
-    cursor: pointer; }
-
-    .btn:hover, .btn:active, .btn:focus {
-        outline: none;
-        box-shadow: none; }
-
-.btn.btn-primary {
-    background: #28CC9E;
-    border-color: #28CC9E;
-    color: #fff; }
-
-    .btn.btn-primary:hover, .btn.btn-primary:focus, .btn.btn-primary:active {
-        background: #4bdcb3; }
-
-    .btn.btn-outline-white {
-        border-color: #fff;
-        background: none; }
-        .btn.btn-outline-white:hover, .btn.btn-outline-white:focus, .btn.btn-outline-white:active {
-        background: #fff;
-        color: #000; }
-
-/* @media screen and (max-width: 768px) {
-    .sec1-text {
-        padding-top: 10vh;
-        width: 100% !important;} } */
-
-
-/* Секция вторая */
-
-.sec2-main{
-    max-width: 100%;
-    height: 70%;
-    padding-top: 20vh;
-}
-
-.sec2-img-item {
-    display: block;
-    position: relative;
-    overflow: hidden;
-}
-
-.sec2-img-item:hover {
-    background-color: #4B0082;
+    width: 100px;
+    height: 100px;
+   
+    animation: color_c 5s both 1s ;
+    border: 2px solid black;
+   
     color: white;
+    text-align: center;
 }
 
-.sec2-img {
-    height: 50vh;
-    background-image: url("https://ru.epicstars.com/wp-content/themes/epicstars_v4/layout/img/offers.img.1.gif");
+.cube:hover .one{
+    animation: drive_one 5s both 2s infinite alternate, color_font 5s both 2s infinite alternate, okr 10s infinite alternate;
 }
 
-.sec2-btn {
-    margin-top: 5vh;
-    background-color: #800080;
+.cube:hover .two{
+    animation: drive_two 5s both 2s infinite alternate, color_font 5s both 2s infinite alternate, okr 10s infinite alternate;
 }
 
-.sec2-text-opacity {
-    opacity: 0;
+.cube:hover .three{
+    animation: drive_three 5s both 2s infinite alternate, color_font 5s both 2s infinite alternate, okr 10s infinite alternate;
 }
 
-.sec2-img-item:hover .sec2-img{
-    background: none;
-    text-align:  center;
-    padding: 10vh;
+.cube:hover .four{
+    animation: drive_four 5s both 2s infinite alternate, color_font 5s both 2s infinite alternate, okr 10s infinite alternate;
 }
 
-.sec2-img-item:hover .sec2-text-opacity {
-    opacity: 1;
+@keyframes okr{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes color_font{
+    from{
+        color:white;
+        font: 20px bold;
+    }
+    to{
+        color: black;
+        font: 60px bold;
+    }
 }
 
-.sec2-img-item:hover h3 {
-    color: white;
+@keyframes run{
+    from{
+        margin-top: 0%;
+    }
+    to{
+        margin-top: 25%;
+     
+    }
 }
 
-.sec2-img-item:hover .sec2-btn {
-    background-color: white;
-    color: black;
+@keyframes color_c{
+    from{
+        border: 2px solid white;
+    }
+    to{
+        border: 2px solid black;
+    }
 }
 
-
-
-/* Секция 3 */
-
-.media .probootstrap-icon {
-    width: 100px; }
-.media .probootstrap-icon img {
-    width: 10vh;
-    height: auto; }
-
-
-.sec3-main {
-
+@keyframes drive_one{
+    from{
+        position: static;
+        border: 2px solid black;
+    }
+    to{
+        margin: -5% 5% 50% 5%;
+        border: 2px solid rgb(236, 4, 159);
+    }
 }
 
-/* .container-my {
-    @extend .container;
-    max-width: 1260px;   
-} 
+@keyframes drive_two{
+    from{
+        position: static;
+        border: 2px solid black;
+    }
+    to{
+        margin: -5% 50% 50% -5%;
+        border: 2px solid rgb(236, 4, 159);
+    }
+}
 
-style="background-color: #800080;"
-style="background-color: #800080;"
-style="background-color: #800080;"
+@keyframes drive_three{
+    from{
+        position: static;
+        border: 2px solid black;
+    }
+    to{
+        margin: 5% 25% 50% -5%;
+        border: 2px solid rgb(236, 4, 159);
+    }
+}
 
-*/
+@keyframes drive_four{
+    from{
+        position: static;
+        border: 2px solid black;
+    }
+    to{
+        margin: 5% 25% 50% 5%;
+        border: 2px solid rgb(236, 4, 159);
+    }
+}
